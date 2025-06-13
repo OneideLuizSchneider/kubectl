@@ -1,6 +1,9 @@
 name: Build and Publish Docker image to Docker Hub
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # nightly run to pick up new Kubernetes stable version
     - cron: '0 0 * * *'
