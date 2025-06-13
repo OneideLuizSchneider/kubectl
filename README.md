@@ -107,8 +107,9 @@ Feel free to open issues or submit PRs to help improve this image. Feature reque
 
 ## 🏗️ Continuous Integration
 
-GitHub Actions CI builds and publishes on a schedule to follow upstream Kubernetes versions:
+GitHub Actions CI builds and publishes on these events:
 
+- **Push to `main`**: builds immediately and tags the image as `oneidels/kubectl:latest`.
 - **Nightly cron** (00:00 UTC): fetches the stable Kubernetes release, tags the image as `oneidels/kubectl:<k8s-version>` and `latest`.
 - **Manual dispatch**: run the workflow interactively from the GitHub Actions tab.
 
