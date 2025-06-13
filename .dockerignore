@@ -1,0 +1,15 @@
+# Exclude Git and CI configuration
+.git
+.github
+
+# Exclude documentation and license files
+*.md
+LICENSE
+
+# Exclude local editor and IDE files
+*.swp
+.vscode/
+.idea/
+
+# Exclude Helm charts directory (if present)
+charts/
