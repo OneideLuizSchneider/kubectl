@@ -102,3 +102,17 @@ Feel free to open issues or submit PRs to help improve this image. Feature reque
 
 - [Kubernetes CLI docs](https://kubernetes.io/docs/reference/kubectl/)
 - [Helm docs](https://helm.sh/docs/)
+  
+---
+
+## 🏗️ Continuous Integration
+
+GitHub Actions CI builds and publishes on a schedule to follow upstream Kubernetes versions:
+
+- **Nightly cron** (00:00 UTC): fetches the stable Kubernetes release, tags the image as `oneidels/kubectl:<k8s-version>` and `latest`.
+- **Manual dispatch**: run the workflow interactively from the GitHub Actions tab.
+
+The workflow is in `.github/workflows/docker-publish.yml`. To enable Docker Hub pushes, set these repository secrets:
+
+- `DOCKERHUB_USERNAME` – your Docker Hub username
+- `DOCKERHUB_TOKEN` – Docker Hub access token or password
