@@ -2,6 +2,8 @@
 
 A lightweight Docker image bundling both **kubectl** and **helm** CLIs for Kubernetes cluster management, CI/CD automation, and scripting.
 
+## Dockerhub Link
+- <https://hub.docker.com/r/oneidels/kubectl>
 ---
 
 ## 🧰 Features
