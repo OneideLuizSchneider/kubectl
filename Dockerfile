@@ -7,7 +7,7 @@ RUN curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/sta
     && install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl \
     && rm -f kubectl
 
-ENV HELM_VERSION="v3.12.3"
+ENV HELM_VERSION="v3.18.3"
 RUN curl -fSL "https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz" -o helm.tar.gz && \
     tar -zxvf helm.tar.gz && \
     mv linux-amd64/helm /usr/local/bin/helm && \
