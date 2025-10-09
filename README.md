@@ -11,6 +11,7 @@ A lightweight Docker image bundling both **kubectl** and **helm** CLIs for Kuber
 - 🛠️ Includes:
   - [kubectl](https://kubernetes.io/docs/reference/kubectl/)
   - [Helm](https://helm.sh/)
+- 🧬 Multi-architecture support for `linux/amd64` and `linux/arm64`
 - 📦 Minimal and portable CLI environment
 - 🚀 Ideal for:
   - CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins, etc.)
