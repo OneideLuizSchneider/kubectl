@@ -12,7 +12,7 @@ RUN set -eux; \
     install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl; \
     rm -f kubectl
 
-ENV HELM_VERSION="v3.19.0"
+ENV HELM_VERSION="v3.19.5"
 RUN curl -fSL "https://get.helm.sh/helm-${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz" -o helm.tar.gz && \
     tar -zxvf helm.tar.gz && \
     mv ${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/helm && \
