@@ -50,6 +50,8 @@ jobs:
           tags: |
             oneidels/kubectl:${{ env.IMAGE_TAG }}
             oneidels/kubectl:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
   smoke-test:
     needs: build
