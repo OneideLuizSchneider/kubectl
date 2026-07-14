@@ -3,7 +3,7 @@ FROM alpine:latest
 ARG TARGETOS=linux
 ARG TARGETARCH=amd64
 
-RUN apk add --no-cache bash curl
+RUN apk add --no-cache bash curl coreutils
 
 # Download kubectl binary and put it in /usr/local/bin
 RUN set -eux; \
